@@ -1,0 +1,18 @@
+
+{{>layouts/header}}
+
+<form class="container" action="/articles/create" method="post">
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title">
+        <!-- name ="DTO에 선언되어있는 필드명과 동일하게 작성" 그래야 필드명에 따라서 폼데이터가 전송될 수 있음-->
+    </div>
+    <div class="mb-3">
+        <label class="form-label">내용</label>
+        <textarea class="form-control" rows="3" name="content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/articles">Back</a>
+</form>
+
+{{>layouts/footer}}
