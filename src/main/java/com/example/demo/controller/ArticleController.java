@@ -32,7 +32,7 @@ public class ArticleController {
     }
 
     // 폼데이터가 던져질때 @PostMapping 주소를 통해 받아와지고
-    // 이때 받아온 데이터는 DTO로 받아주어야하기 때문에 파라미터로 ArticleForm을 넣어준다.
+    // 이때 받아온 데이터는 DTO로 받기 때문에 파라미터로 ArticleForm을 넣어준다.
     // 던져진 data는 DOT 객체에 담겨진다.
     @PostMapping("/articles/create")
     public String crateArticle(ArticleForm form){
