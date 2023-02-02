@@ -14,9 +14,12 @@ import lombok.ToString;
 @ToString
 public class CommentDto {
     private Long id;
+
     @JsonProperty("article_id")
     private Long articleId;
+
     private String nickname;
+
     private String body;
 
     public static CommentDto createCommentDto(Comment comment) {
